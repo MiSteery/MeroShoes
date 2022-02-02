@@ -20,10 +20,26 @@ class Root extends StatelessWidget {
           horizontal: 10,
         ),
         child: Row(
+          mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
             IconButton(
+              splashRadius: 25,
+              onPressed: () {},
+              icon: SvgPicture.asset(
+                "assets/images/menu.svg",
+                height: 24,
+              ),
+            ),
+            Row(children: [
+              IconButton(
+                splashRadius: 25,
                 onPressed: () {},
-                icon: SvgPicture.asset("assets/images/menu.svg", height: 24))
+                icon: SvgPicture.asset(
+                  "assets/images/search.svg",
+                  height: 24,
+                ),
+              ),
+            ])
           ],
         ),
       )),
